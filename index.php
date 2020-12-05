@@ -22,5 +22,6 @@ $quickUnion->setUnion(5,0);
 $quickUnion->setUnion(7,2);
 $quickUnion->setUnion(6,1);
 $quickUnion->setUnion(7,3);
+echo "Quick Union";
 print_r($quickUnion->getAll());
 
