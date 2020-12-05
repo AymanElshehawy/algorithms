@@ -1,15 +1,15 @@
 <?php
 
 
-class union
+class UnionQuickFind
 {
-    private $id =[];
+    private array $id = [];
 
     /**
      * set n numbers with same values
      * @param int $n
      */
-    public function quickFindUF(int $n)
+    public function quickFindUF(int $n): void
     {
         for ($i=0; $i<$n; $i++){
             $this->id[$i] = $i;
@@ -26,7 +26,7 @@ class union
         return $this->id[$p] == $this->id[$q];
     }
 
-    public function setUnion(int $p, int $q)
+    public function setUnion(int $p, int $q): void
     {
         $pid = $this->id[$p];
         $qid = $this->id[$q];
@@ -35,7 +35,7 @@ class union
         }
     }
 
-    public function getAll()
+    public function getAll(): array
     {
         return $this->id;
     }
